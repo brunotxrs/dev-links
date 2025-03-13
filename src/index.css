@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --text-color-dark-mode: #FFF;
+  --stroke-color-dark-mode: #ffffff80;
+  --surface-color-dark-mode: #ffffff1a ;
+  --surface-color-dark-mode-hover: #ffffff0d;
+  --highlight-color-dark-mode: #ffffff33;
+
+  --text-size-md: 1em;
+  --line-height-md: 24px;
+  --font-weight-md: 500; 
+
+  --text-size-sm: 0.875em;
+  --line-height-sm: 24px;
+  --font-weight-sm: 400;
+
+  --bg-dark: url(../src/assets/img/bg-mobile/bg-mobile-dark.svg);
+  
+  --bg-light: url(../src/assets/img/bg-mobile/bg-mobile-light.svg);
+
+  --handle-bg: url(../src/assets/img/MoonStars.svg);
+
+}
+
+.light-mode {
+
+  --text-color-light-mode: #000;
+  --stroke-color-light-mode: rgba(0, 0, 0, 0.502);
+  --surface-color-light-mode: #0000000d;
+  --surface-color-light-mode-hover: #00000005;
+  --highlight-color-light-mode: #0000001a;
+  --handle-bg: url(../src/assets/img/Sun.svg);
+  --bg: url(../src/assets/img/bg-mobile/bg-mobile-light.svg);
+
+}
+
+html {
+  scrollbar-width: none;
+  
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  
+  font-family: var(--font-family);
+  background: #3C2B54 var(--bg-dark) no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+
+}
+
+body.light-mode{
+  background: #EFDAF0 var(--bg-light) no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: var(--font-family);
+}
