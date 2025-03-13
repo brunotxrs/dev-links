@@ -1,0 +1,57 @@
+@import url(../../index.css);
+
+.link-container {
+    width: 320px;
+    height: 320px;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.link-box {
+    list-style: none;
+    outline: 1.5px solid var(--stroke-color-dark-mode);
+    background-color: var(--surface-color-dark-mode);
+    width: 280px;
+    height: 56px;
+    padding: 24px 16px;
+    border-radius: 8px;
+    text-align: center;
+    
+    transition: background-color 0.3s ease, outline 0.3s ease;
+        
+
+}
+
+.link-box:hover {
+    outline: 1.5px solid var(--text-color-dark-mode);
+    background-color: var(--surface-color-dark-mode-hover);
+}
+
+.link-text {
+    text-decoration: none;
+    color: var(--text-color-dark-mode);
+    font-size: var(--text-size-md);
+    line-height: var(--line-height-md);
+    font-weight: var(--font-weight-md);
+}
+
+
+.light-mode .link-box  {
+    outline: 1.5px solid var(--stroke-color-light-mode);
+    background-color: var(--surface-color-light-mode);
+}
+
+.light-mode .link-box:hover  {
+    outline: 1.5px solid var(--text-color-light-mode);
+    background-color: var(--surface-color-light-mode-hover);
+}
+
+
+
+.light-mode .link-text {
+    text-decoration: none;
+    color: var(--text-color-light-mode);
+}

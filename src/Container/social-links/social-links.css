@@ -1,0 +1,73 @@
+@import url(../../index.css);
+.social-links-container {
+    width: 300px;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        gap: 16px;
+        margin: 0;
+        padding: 24px 0;
+    }
+
+    .box-social {
+        list-style: none;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        
+        
+    }
+
+    .box-social:hover {
+        border-radius: 50%;
+        background-color: var(--highlight-color-dark-mode);
+    }
+
+    .light-mode.box-social:hover {
+        background-color: var(--highlight-color-light-mode);
+    }
+
+    
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        ion-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--text-color-dark-mode);
+        }
+    }
+
+    
+
+    .light-mode.social {
+
+        ion-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--text-color-light-mode);
+        }
+    }
+
+    
+    
+}

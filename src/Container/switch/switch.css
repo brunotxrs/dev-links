@@ -1,0 +1,71 @@
+@import url(../../index.css);
+
+.container {
+    width: 64px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .box {
+        width: 64px;
+        height: 24px;
+        border-radius: 9999px;
+        outline: 2px solid var(--stroke-color-dark-mode);
+        background-color: var(--surface-color-dark-mode);
+        position: relative;
+
+        button {
+            position: absolute;
+            left: -2px;
+            top: -4px;
+            border: none;
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+            border-radius: 9999px;
+            background: #fff var(--handle-bg) no-repeat center;
+
+            transition: outline 0.3s ease , left 0.4s ease;
+
+        }
+
+        button:hover {
+            outline: 8px solid var(--highlight-color-dark-mode);
+
+
+        }
+
+    }
+
+    .box:hover {
+        background-color: var(--surface-color-dark-mode-hover);
+    }
+
+    .light-mode.box {
+        outline: 2px solid var(--stroke-color-light-mode);
+        background-color: var(--surface-color-light-mode);
+    }
+
+    .light-mode.box:hover {
+        background-color: var(--surface-color-light-mode-hover);
+    }
+
+
+
+    .light-mode button {
+        position: absolute;
+        left: 55%;
+        top: -4px;
+        border: none;
+        
+    }
+
+    .light-mode button:hover {
+        
+        outline: 8px solid var(--highlight-color-light-mode);
+    }
+
+
+}

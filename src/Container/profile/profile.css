@@ -1,0 +1,48 @@
+@import url(../../index.css);
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    padding: 24px;
+
+    .img {
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        background-color: var(--text-color-dark-mode);
+        outline: 2px solid var(--stroke-color-dark-mode);
+
+
+        img {
+            width: 112px;
+            height: 112px;
+            border-radius: 50%;
+        }
+    }
+    
+
+    .text {
+        font-size: var(--text-size-md);
+        font-weight: var(--font-weight-md);
+        line-height: var(--line-height-md);
+        color: var(--text-color-dark-mode);
+
+    }
+
+    .light-mode.text {
+        font-size: var(--text-size-md);
+        font-weight: var(--font-weight-md);
+        line-height: var(--line-height-md);
+        color: var(--text-color-light-mode);
+
+    }
+
+    .light-mode.img {
+        outline: 2px solid var(--stroke-color-light-mode);
+
+    }
+
+
+}
